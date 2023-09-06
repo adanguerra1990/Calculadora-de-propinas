@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+// Fuentes
+$fuentePrincipal: 'Space Mono', monospace;
+$weight700: 700;
+
+// Colores
+$cyan: hsl(185, 41%, 84%);
+$strongCyan: hsl(172, 67%, 45%);
+
+// Neutrales
+$veryDarkCyan: hsl(183, 100%, 15%);
+$darkGrayishCyan: hsl(186, 14%, 43%);
+$grayishCyan: hsl(184, 14%, 56%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$veryLightGrayishCyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+//Tamaños de Media Queries
+$telefono: 480px;
+$tablet: 762px;

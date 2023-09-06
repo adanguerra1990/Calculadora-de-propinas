@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+
+.btn {
+    border: none;
+    font-size: 2.4rem;
+    padding: 1rem;
+    color: v.$white;
+    border-radius: .5rem;
+
+}
+
+.btn-porcentaje {
+    cursor: pointer;
+    background-color: v.$veryDarkCyan;
+
+    &:hover {
+        background-color: v.$strongCyan;
+        color: v.$veryDarkCyan;
+    }
+}
+
+.btn-reset {
+    cursor: pointer;
+    background-color: v.$strongCyan;
+    color: v.$veryDarkCyan;
+    width: 100%;
+    &:disabled {
+        cursor: default;
+        background-color: v.$darkGrayishCyan;
+        color: v.$veryDarkCyan;
+    }
+}

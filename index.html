@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+
+<body>
+
+  <section class="container-center">
+
+    <header class="logo">
+      <img src="build/images/logo.svg" alt="logo">
+    </header>
+
+    <main class="container-calculadora">
+      <section class="container-operaciones">
+        <div class="input-field">
+          <h4 for="bill">Bill</h4>
+          <input id="factura" type="number" placeholder="0">
+          <span class="icon icon-dollar"></span>
+        </div>
+        <div class="btn-field input-field">
+          <h4 for="bill">Select Tip %</h4>
+          <div class="container-btn">
+            <button class="btn btn-porcentaje porcentaje" value="5">5%</button>
+            <button class="btn btn-porcentaje porcentaje" value="10">10%</button>
+            <button class="btn btn-porcentaje porcentaje" value="15">15%</button>
+            <button class="btn btn-porcentaje porcentaje" value="25">25%</button>
+            <button class="btn btn-porcentaje porcentaje" value="50">50%</button>
+            <input id="porcentaje-custon" class="input-porcentaje porcentaje" value="" type="number" placeholder="Custom" min="0" max="100">
+          </div>
+        </div>
+        <div class="input-field">
+          <h4 for="person">Number of People</h4>
+          <input id="personas" type="number" placeholder="0">
+          <span class="icon icon-person"></span>
+        </div>
+
+      </section>
+
+      <aside class="container-total">
+        <div class="flex">
+          <div class="total-field">
+            <div class="campo">
+              <h4 for="Amount">Tip Amount</h4>
+              <p>/ person</p>
+            </div>
+            <span id="propina" class="total">$0.00</span>
+          </div>
+          <div class="total-field">
+            <div class="campo">
+              <h4 for="total">Total</h4>
+              <p>/ person</p>
+            </div>
+            <span id="propina-total" class="total">$0.00</span>
+          </div>
+        </div>
+        <button id="btn-reset" class="btn btn-reset" disabled>RESET</button>
+      </aside>
+    </main>
+  </section>
+
+
+  <script src="build/js/app.js"></script>
+  <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
